@@ -51,7 +51,30 @@ false == null;
 null == undefined;
 ' \t\r\n' == 0;
 
-//논리곱
-if (isHero && isHulk) {
 
-}
+var me =  {
+    age: 11,
+    name: 'a',
+    isMan: true,
+    sayHello: function() {
+        console.log('hello');
+    },
+};
+
+me.sayHello();
+
+var todos = ['운동'];
+var todo = '게임';
+todos.push(todo);
+todos.forEach(asdf => console.log(asdf));
+
+
+var updateIndex = todos.findIndex(asdf => asdf == '게임');
+todos[updateIndex] = '공부';
+todos.forEach(asdf => console.log(asdf));
+
+var List = ['a', 'qq', 'b', 'c', 'rrrrr'];
+List = List.filter(asdf => asdf.length >= 2);
+List.forEach(asdf => console.log(asdf));
+
+console.log('----start----');
