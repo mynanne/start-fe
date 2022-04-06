@@ -55,4 +55,12 @@ function Etoggle(event) {
 }
 btnToggle.addEventListener('click', Etoggle);
 
-//TODO : 이미지버튼
+function Eimage(event) {
+    var boxAll = document.querySelectorAll('.box');
+
+    var img = document.createElement("img");
+    img.src = "https://i.imgur.com/69NjYBH.png";
+
+    boxAll[0].appendChild(img);
+}
+btnImage.addEventListener('click',Eimage);
