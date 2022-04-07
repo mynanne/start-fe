@@ -13,7 +13,6 @@ function boxMousedown(event) {
     }
 
     boxClick = true;
-    console.log("Mouse Down", event.clientX, parseInt(box.style.marginLeft, 10));
 }
 function boxMousemove(event) {
     if(boxClick) {
@@ -23,7 +22,6 @@ function boxMousemove(event) {
 }
 function boxMouseup(event) {
     boxClick = false;
-    console.log("Mouse Up");
 }
 
 
