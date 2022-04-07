@@ -7,9 +7,9 @@ var mouseTop = 0;
 function boxMousedown(event) {
     mouseLeft = event.clientX;
     mouseTop = event.clientY;
-    if(box.style.marginLeft && box.style.marginTop) {
-        mouseLeft -= parseInt(box.style.marginLeft, 10);
-        mouseTop -= parseInt(box.style.marginTop, 10);
+    if(box.style.left && box.style.top) {
+        mouseLeft -= parseInt(box.style.left, 10);
+        mouseTop -= parseInt(box.style.top, 10);
     }
 
     boxClick = true;
@@ -17,8 +17,8 @@ function boxMousedown(event) {
 
 function boxMousemove(event) {
     if(boxClick) {
-        box.style.marginLeft = event.clientX -mouseLeft +"px";
-        box.style.marginTop = event.clientY -mouseTop +"px";
+        box.style.left = event.clientX -mouseLeft +"px";
+        box.style.top = event.clientY -mouseTop +"px";
     }
 }
 
