@@ -14,12 +14,14 @@ function boxMousedown(event) {
 
     boxClick = true;
 }
+
 function boxMousemove(event) {
     if(boxClick) {
         box.style.marginLeft = event.clientX -mouseLeft +"px";
         box.style.marginTop = event.clientY -mouseTop +"px";
     }
 }
+
 function boxMouseup(event) {
     boxClick = false;
 }
